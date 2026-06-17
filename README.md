@@ -5,15 +5,19 @@
 
 <a href="https://tairos.tencent.com/openSourceModels/hy-embodied-0.5-vla"><img src="https://img.shields.io/badge/Website-Project_Page-blue?logo=internet-explorer" alt="Project Page"></a>
 <a href="https://arxiv.org/abs/2606.14409"><img src="https://img.shields.io/badge/PDF-arXiv-red?logo=arxiv" alt="Tech Report"></a>
-<a href="https://huggingface.co/tencent/Hy-Embodied-0.5-VLA-UMI"><img src="https://img.shields.io/badge/Model-HuggingFace-yellow?logo=huggingface" alt="Model"></a>
-<a href="https://huggingface.co/datasets/tencent/Hy-Embodied-0.5-VLA-Data"><img src="https://img.shields.io/badge/Data-HuggingFace-orange?logo=huggingface" alt="Data"></a>
 <a href="https://github.com/Tencent-Hunyuan/Hy-Embodied-0.5-VLA"><img src="https://img.shields.io/badge/Code-GitHub-black?logo=github" alt="Code"></a>
+<br>
+<a href="https://huggingface.co/tencent/Hy-Embodied-0.5-VLA-UMI"><img src="https://img.shields.io/badge/Model-HuggingFace-yellow?logo=huggingface" alt="Model"></a>
+<a href="https://modelscope.cn/models/Tencent-Hunyuan/Hy-Embodied-0.5-VLA-RoboTwin"><img src="https://img.shields.io/badge/Model-ModelScope-purple?logo=modelscope" alt="ModelScope"></a>
+<a href="https://huggingface.co/datasets/tencent/Hy-Embodied-0.5-VLA-Data"><img src="https://img.shields.io/badge/Data-HuggingFace-orange?logo=huggingface" alt="Data"></a>
+<a href="https://modelscope.cn/datasets/Tencent-HunYuan/Hy-Embodied-0.5-VLA-Data"><img src="https://img.shields.io/badge/Data-ModelScope-purple?logo=modelscope" alt="Data"></a>
 </div>
 
 https://github.com/user-attachments/assets/fdd1966c-8453-4f6a-9758-238076d08ac4
 
 ## 🔥 Updates
 
+* **`[2026-06-16]`** 🌐 Added ModelScope links for all models and data.
 * **`[2026-06-15]`** 🚀 We have released **Hy-Embodied-0.5-VLA** — including the codebase, the [`Hy-Embodied-0.5-VLA-UMI`](https://huggingface.co/tencent/Hy-Embodied-0.5-VLA-UMI) and [`Hy-Embodied-0.5-VLA-RoboTwin`](https://huggingface.co/tencent/Hy-Embodied-0.5-VLA-RoboTwin) models, and the [`Hy-Embodied-0.5-VLA-Data`](https://huggingface.co/datasets/tencent/Hy-Embodied-0.5-VLA-Data) egocentric UMI dataset (2K+ hours)!
 
 ## 📖 Abstract
@@ -150,10 +154,10 @@ Hy-VLA follows the Vision-Language-Action paradigm built on three components:
 
 ### Released Checkpoints
 
-| Model | HuggingFace | Description |
-|---|---|---|
-| **Hy-VLA-UMI** | [`tencent/Hy-Embodied-0.5-VLA-UMI`](https://huggingface.co/tencent/Hy-Embodied-0.5-VLA-UMI) | Pre-trained on the Hy-UMI-10K corpus; intended as a generalist starting point for fine-tuning |
-| **Hy-VLA-RoboTwin** | [`tencent/Hy-Embodied-0.5-VLA-RoboTwin`](https://huggingface.co/tencent/Hy-Embodied-0.5-VLA-RoboTwin) | Post-trained on the RoboTwin 2.0 50-task benchmark |
+| Model | HuggingFace | ModelScope | Description |
+|---|---|---|---|
+| **Hy-VLA-UMI** | [`tencent/Hy-Embodied-0.5-VLA-UMI`](https://huggingface.co/tencent/Hy-Embodied-0.5-VLA-UMI) | [`Tencent-Hunyuan/Hy-Embodied-0.5-VLA-UMI`](https://modelscope.cn/models/Tencent-Hunyuan/Hy-Embodied-0.5-VLA-UMI) | Pre-trained on the Hy-UMI-10K corpus; intended as a generalist starting point for fine-tuning |
+| **Hy-VLA-RoboTwin** | [`tencent/Hy-Embodied-0.5-VLA-RoboTwin`](https://huggingface.co/tencent/Hy-Embodied-0.5-VLA-RoboTwin) | [`Tencent-Hunyuan/Hy-Embodied-0.5-VLA-RoboTwin`](https://modelscope.cn/models/Tencent-Hunyuan/Hy-Embodied-0.5-VLA-RoboTwin) | Post-trained on the RoboTwin 2.0 50-task benchmark |
 
 Both checkpoints are self-contained — they ship their own `tokenizer.json`, `vlm_config_dict`, `chat_template.jinja`, and pre-computed normalization statistics (`norm_stats.pkl`). If needed, you can regenerate normalization stats on your own data using `scripts/compute_norm_lance.py`.
 
