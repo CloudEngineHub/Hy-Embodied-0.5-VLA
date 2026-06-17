@@ -234,8 +234,6 @@ def train(cfg: DictConfig) -> None:
         weight_decay=opt_preset.weight_decay,
     )
 
-    hy_config.scheduler_warmup_steps *= accelerator.num_processes
-    hy_config.scheduler_decay_steps *= accelerator.num_processes
     sch_preset = hy_config.get_scheduler_preset()
     # Cosine ramp-up to ``peak_lr`` over ``num_warmup_steps``, then
     # cosine decay to ``decay_lr`` over ``num_decay_steps``, then a
